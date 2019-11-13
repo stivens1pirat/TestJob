@@ -1,0 +1,34 @@
+users = '[\
+  {\
+    "image": "img/logo/binman.png",\
+    "name":"Бинман Иван Натанович",\
+    "vacancy": "Full-stack разработчик",\
+    "number": "8(123)321-12-23",\
+    "mail": "ivan@binmail.com",\
+    "rate": "1"\
+  },\
+  {\
+    "image": "img/logo/durakov.png",\
+    "name":"Дураков Павел Валерьевич",\
+    "vacancy": "Full-stack разработчик",\
+    "number": "",\
+    "mail": "durak@bingmail.com",\
+    "rate": "4"\
+  },\
+  {\
+    "image": "img/logo/fedora.png",\
+    "name":"Федора Линукс Линусович",\
+    "vacancy" : "Front-end разработчик",\
+    "number": "8(444)555-66-77",\
+    "mail": "fedora@binrambler.ru",\
+    "rate": "5"\
+  },\
+  {\
+    "image": "img/logo/lebedin.png",\
+    "name": "Лебедин Артемий Андреевич",\
+    "vacancy": "Web-дизайнер",\
+    "number": "8(765)432-10-00",\
+    "mail": "",\
+    "rate": "3"\
+  }\
+]';

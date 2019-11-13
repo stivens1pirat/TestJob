@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  color: #515559;
+}
+::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:#c6cfcb;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color: #8bafc4;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(58, 109, 240);
+  -webkit-width: 10px;
+}
+
+::-webkit-resizer{
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:4px;
+  height:0px
+}
+
+::-webkit-scrollbar{
+  width: 4px;
+}
+.site{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.head{
+  width: 100%;
+  height: 70px;
+  background-color: #28303b;
+  flex-direction: row;
+}
+.head img{
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  width: auto;
+  margin: 13px 0 0 20px;
+}
+.head span{
+  color: white;
+  font-size: 1.7em;
+  margin: 0 5px;
+  vertical-align: super;
+  font-family: Century Gothic;
+}
+.body{
+  margin-top: 70px;
+  position: fixed;
+  width:100%;
+  height: calc(100% - 70px);
+  display: flex;
+  flex-direction: row;
+  font-family: Arial Narrow, sans-serif;
+}
+.menu{
+  padding: 15px 0px;
+  width: 70px;
+  height: 100%;
+  background-color: #323a45;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+  flex-direction: column;
+}
+.menu img{
+  margin: 2px 10px;
+  padding: 10px 15px;
+  width: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+img:active{
+  background-color: #282d36;
+}
+.wall{
+  width: calc(100% - 70px);
+  height: 100%;
+  background-color: #f4f9fb;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.2);
+  padding: 20px 25px;
+  font-size: 11px;
+  font-weight: bold;
+  overflow: auto;
+}
+.modal{
+  z-index: 1;
+  width: calc(100% - 67px);
+  height: 100%;
+  position: fixed;
+  margin-left: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9em;
+  color: #44484d;
+}
+.modal .content{
+  padding: 20px;
+  border-bottom: 2px solid #f4f9fb;
+  display: flex;
+  flex-direction: column;
+}
+.modal .content h5{
+  margin: 15px 0 0 0;
+}
+.modal .content input, .modal .content select, .button{
+  margin: 5px 0;
+  background-color: #f4f9fb;
+  border: 1px solid #8bafc4;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+}
+.button{
+  padding: 3px;
+  color:#8bafc4;
+}
+.button button, #add{
+  height: 30px;
+  background-color: #3a6df0;
+  border: #3a6df0;
+  color: white;
+}
+.modal .content select {color:#8bafc4}
+.modal .content input::placeholder{color:#8bafc4}
+.modal .content .comment{
+  font-size: 0.9em;
+  color: #8bafc4;
+  margin-bottom: 3px;
+}
+.rating{
+  display: flex;
+  flex-direction: row;
+}
+.rating div{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.rating button{
+  flex:1;
+  height: 30px;
+  border-radius: 3px;
+}
+#rate{
+  display: flex;
+  flex-direction: row;
+}
+#comment{
+  margin-bottom: 0;
+  width: fit-content;
+  background-image: linear-gradient(to right, #8bafc4 50%, transparent 50%);
+  background-position: 0 1.04em;
+  background-repeat: repeat-x;
+  background-size: 3px 1px;
+}
+#modal{
+  transition: 0.4s ease;
+}
+#modalBackground{
+  background-color: rgba(0,0,0,0.5);
+}
+.background{
+  flex: 4;
+  padding: 10px 10px 0 0;
+  flex-direction: row-reverse;
+  display: flex;
+}
+#close{
+  border-radius: 5px;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#close span{
+font-size: 1.5em;
+font-weight: bold;
+margin: 0 10px;
+}
+.addUser{
+  flex: 3;
+  height: calc(100% - 67px);;
+  background-color: white;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2), inset 0 2px 5px rgba(0,0,0,0.2);
+  padding: 5px 0 0 0;
+  overflow-y: auto;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  margin-bottom: 3px;
+  background-color: white;
+}
+button{
+  cursor: pointer;
+  height: 40px;
+  vertical-align: middle;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid silver;
+  margin-right: 5px;
+  padding: 0 10px;
+  font-size: 11px;
+  font-weight: bold;
+}
+button img{
+  height:16px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+#newUser{
+  background-color: #3a6df0;
+  border: #3a6df0;
+  color: white;
+}
+.text{
+  padding: 5px 10px;
+}
+.comment{
+  font-weight: normal;
+  color: grey;
+}
+.heading{
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.user .photo{
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  border-radius: 50em;
+}
+.user img{
+  margin-left: 20px;
+  transform: translate(-50%);
+  height: 40px;
+}
+.number .photo, .mail .photo{
+  height: 36px;
+  width: 36px;
+  background-color: #f4f9fb;
+  border-radius: 5px;
+}
+.action .photo{
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  border: 1px solid silver;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.action img{
+  margin: 7px;
+  height: 16px;
+  width: 16px;
+}
+.number img, .mail img{
+  margin: 8px;
+  height: 20px;
+  width: 20px;
+}
+.all{
+  transform: translate(-50%);
+  margin-left: 50%;
+  cursor: pointer;
+}
+.left .headText{font-size: 2em}
+.user, .number, .mail, .rate, .action{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.user{flex: 3}
+.number{flex: 2}
+.mail{flex: 3}
+.rate{flex: 2}
+.action{flex: 1}

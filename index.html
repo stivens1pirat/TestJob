@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="users.json"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <title>Test</title>
+</head>
+<body>
+  <div class="site">
+    <div class="head">
+      <img src="img/garbage.png"><span>binman</span>
+    </div>
+    <div class="body">
+      <div class="menu">
+        <img src="img/home.png">
+        <img src="img/people.png">
+        <img src="img/graphic.png">
+      </div>
+      <div class="wall" id="wall">
+
+      </div>
+      <div class="modal" id="modalBackground"></div>
+      <div class="modal" id="modal">
+        <div class="background" id="background"><div id="close"><span>×</span></div></div>
+        <div class="addUser" id="addUser">
+          <div class="content"><b>ДОБАВЛЕНИЕ СОИСКАТЕЛЯ</b></div>
+          <div class="content">
+            <h5>ОСНОВНЫЕ ДАННЫЕ</h5>
+            <h5>ФИО</h5>
+            <input type="text" placeholder=" Введите ФИО">
+            <h5>ВАКАНСИЯ</h5>
+            <select>
+              <option id="firstOption" selected="selected" isabled>Выберите вакансию</option>
+            </select>
+            <h5>ФОТОГРАФИЯ</h5>
+            <span class="comment">Размер файла вложения не должен превышать 5Мб, для загрузки допустимы следующие форматы файлов: jpg, png</span>
+            <div class="button"><button>ВЫБЕРИТЕ ФАЙЛ</button>Файл не выбран</div>
+          </div>
+          <div class="content">
+            <h4>КОНТАКТНЫЕ ДАННЫЕ</h4>
+            <h5>НОМЕР ТЕЛЕФОНА</h5>
+            <input type="text" placeholder=" Введите номер телефона">
+            <span class="comment" id="comment">Добавить ещё один номер телефона</span>
+            <h5>E-MAIL</h5>
+            <input type="text" placeholder=" Введите e-mail">
+            <span class="comment" id="comment">Добавить ещё один e-mail</span>
+          </div>
+          <div class="content">
+            <h4>РЕЗЮМЕ И РЕЗУЛЬТАТЫ ТЕСТОВОГО ЗАДАНИЯ</h4>
+            <h5>РЕЗЮМЕ</h5>
+            <span class="comment">Размер файла вложения не должен превышать 50Мб, для загрузки допустимы следующие форматы файлов: pdf, doc</span>
+            <div class="button"><button>ВЫБЕРИТЕ ФАЙЛ</button>Файл не выбран</div>
+            <h5>АРХИВ С РЕЗУЛЬТАТОМИ ТЕСТОВОГО ЗАДАНИЯ</h5>
+            <span class="comment">Размер файла вложения не должен превышать 50Мб, для загрузки допустимы следующие форматы файлов: zip, rar</span>
+            <div class="button"><button>ВЫБЕРИТЕ ФАЙЛ</button>Файл не выбран</div>
+          </div>
+          <div class="content">
+            <h4>Оценка соискателя</h4>
+            <div class="rating">
+              <div>
+                <h5>ОЦЕНКА РЕЗЮМЕ</h5>
+              </div>
+              <div>
+                <h5>ОЦЕНКА ТЕСТОВОГО ЗАДАНИЯ</h5>
+              </div>
+              <div>
+                <h5>ОЦЕНКА СОБЕСЕДОВАНИЯ</h5>
+              </div>
+            </div>
+            <div class="rating">
+              <div>
+                <div style="color: #56bf00; font-size: 1.5em">★★★★★</div>
+              </div>
+              <div>
+                <div style="color: #a7cc23; font-size: 1.5em">★★★★☆</div>
+              </div>
+              <div>
+                <div style="margin-left: 0; color: yellow; font-size: 1.5em">★★★☆☆</div>
+              </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="rating">
+            <button id="cancel">ОТМЕНИТЬ</button><button id="add">ДОБАВИТЬ СОИСКАТЕЛЯ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
